@@ -269,10 +269,10 @@ fieldset[disabled] .btn-xl.active {
 header {
     text-align: center;
     color: #fff;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
     background-position: center center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -672,8 +672,10 @@ section#refrain {
 section#contact {
     background-color: #222;
     background-image: url('{{ site.baseurl }}/img/map-image.png');
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section#contact .section-heading {
