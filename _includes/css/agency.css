@@ -657,7 +657,7 @@ aside.clients img {
     margin: 50px auto;
 }
 
-aside#refrain {
+section#refrain {
     background-color: #222;
     background-image: url('{{ site.baseurl }}/img/DCK-house.jpg');
     background-position: center;
