@@ -266,13 +266,17 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 header {
     text-align: center;
     color: #fff;
-    background-attachment: fixed;
     background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -660,10 +664,6 @@ aside.clients img {
 section#refrain {
     background-color: #222;
     background-image: url('{{ site.baseurl }}/img/DCK-house.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
   /* Full height */
   height: 100%;
@@ -672,10 +672,6 @@ section#refrain {
 section#contact {
     background-color: #222;
     background-image: url('{{ site.baseurl }}/img/map-image.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 section#contact .section-heading {
@@ -880,3 +876,10 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
