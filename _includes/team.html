@@ -2,38 +2,19 @@
     <section id="team" class="bg-light-gray">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Director Experience</h2>
-                    <h3 class="section-subheading text-muted">Libby Upson is an ambitious and motivated Interior designer with considerable experience in both the education and commercial office fit out sectors. <br/><br/>
-                    Libby is a valued, reliable project leader; driven by the dedication to get the job done accurately, efficiently and with the utmost professionalism. <br/><br/>
-                    Through continued liaison with clients, contractors, consultants and suppliers Libby prides herself on being proficient at interpreting the brief and designing a solution that is both innovative and fit for purpose. <br/><br/>
-                    With a comprehensive knowledge of the design and furniture industry, Libby is able to develop and detail innovative design concepts that are cost effective and realistic. (Please see Directors Project Experience for more detailed information)</h3>
+                <div class="col-lg-12">
+                    <h2 class="section-heading text-center">Director Experience</h2>
                 </div>
             </div>
-            <div class="row hide">
-                {% for member in site.people %}
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
-                        <h4>{{ member.name }}</h4>
-                        <p class="text-muted">{{ member.position }}</p>
-                        <ul class="list-inline social-buttons">
-                            {% for network in member.social %}
-                            <li>
-                                <a href="{{ network.url }}">
-                                    <i class="fa fa-{{ network.title }}"></i>
-                                </a>
-                            </li>
-                            {% endfor %}
-
-                        </ul>
-                    </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="/img/team/libby.png" />
                 </div>
-                {% endfor %}
-            </div>
-            <div class="row hide">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                <div class="col-md-9">
+                    <h3 class="section-subheading text-muted">Libby Upson</h3>  
+                    <p class="text-muted">With innovative design solutions and an ability to interpret her clients business requirements, Libby works at the place where users and buildings meet, seeking ways in which the design and use of space can support academic and/or organisational change. <br/><br/>
+                        Libby is an ambitious and motivated Interior designer with over 14 years experience in both the education and commercial office fit out sectors. Libby prides herself on being proficient at interpreting the brief. With a comprehensive knowledge of the design and furniture industry, Libby is able to develop and detail innovative design concepts that are cost effective and realistic. <br/><br/>
+                    </p>
                 </div>
             </div>
         </div>
