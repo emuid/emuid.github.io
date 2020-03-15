@@ -340,7 +340,7 @@ section h2.section-heading {
 }
 
 section h3.section-subheading {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
     text-transform: none;
     font-family: {{ site.data.template.font.secondary }};
     font-size: 16px;
@@ -880,6 +880,18 @@ body {
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1366px) {
     .parallax {
-      background-attachment: scroll;
+        background-attachment: scroll;
     }
-  }
+}
+
+.section-linked-top {
+    padding-bottom: 50px;
+}
+
+.section-linked-middle {
+    padding: 25px 0;
+}
+
+.section-linked-bottom {
+    padding-top: 50px;
+}
